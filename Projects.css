@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Comucan';
-    src: url('../Fonts/Comucan.otf') format('truetype');
+    src: url('Fonts/Comucan.otf') format('truetype');
 }
 
 
@@ -106,6 +106,12 @@ p {
 
 .pfp {
     width: 20%;
+    border-radius: 20px;
+    border: 6px solid #040614;
+}
+.CV {
+    width: 100%;
+    display: flex;
     border-radius: 20px;
     border: 6px solid #040614;
 }

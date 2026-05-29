@@ -1,6 +1,6 @@
 ﻿@font-face {
     font-family: 'Comucan';
-    src: url('../Fonts/Comucan.otf') format('truetype');
+    src: url('Fonts/Comucan.otf') format('truetype');
 }
 
 
@@ -78,3 +78,16 @@ IconContainer {
             background-color: #04AA6D;
             color: white;
         }
+
+.profile {
+    font-size: 200%;
+    color: white;
+    font-family: 'Comucan', sans-serif;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #212a4d;
+    border-radius: 0px 0px 20px 20px;
+}
