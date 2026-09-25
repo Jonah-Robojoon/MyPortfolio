@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>My Page</title>
+    <link rel="stylesheet" href="../Projects.css">
+    <link rel="stylesheet" href="../Main.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <a href="../index.html">Home</a>
+        <a class="active" href="javascript:void(0)">Games</a>
+        <a href="AboutMe.html">About Me</a>
+    </div>
+
+    <mainInput>
+        <projectInput>
+            <h1>Water Simulation</h1>
+            <img class="gifs" src="../Images/WaterSimulationShowcacse.gif" alt="Test Showcase">
+
+            <h2>About</h2>
+            <textBox class="textBox">
+                <p>This is a water simulation I made for fun. I wanted to try Lua, so I thought a quick and simple water simulation would do the trick. I really like the satisfying look of the water.</p>
+            </textBox>
+
+
+            <h2>Particles</h2>
+            <textBox class="sideImage textBox">
+                <img class="Image" src="../Images/WaterParticleShowcacse.gif" alt="Test Showcase">
+                <p>
+                    Each water particle checks the grid cells next to it for collisions.
+                    If it finds one, it updates both particles to the correct position and velocity.
+                    Then it checks if it has entered a new grid cell and updates its cell parent.
+                </p>
+            </textBox>
+
+            <textBox class="lowerImage textBox">
+                <img class="maxImage" src="../Images/WaterGridShowcacse.gif" alt="WaterGridShowcase">
+            </textBox>
+
+            <h2>Simulation Grid</h2>
+            <textBox class="sideImage textBox">
+                <img class="ImageSmall" src="../Images/WaterGridCodeShowcase.png" alt="Test Showcase">
+                <p>
+                    The simulation grid is a 2D array of cells that contain the particles. Each cell has a list of particles that are currently in that cell. This allows for efficient collision detection, as each particle only needs to check for collisions with other particles in the same cell and the neighboring cells.
+                </p>
+            </textBox>
+
+            <h2>Learned</h2>
+            <textBox class="textBox">
+                <p>This project made me understand Lua a lot more. Another thing I learned is how fun it is to make your projects look visually interesting with the most simple graphics/art.</p>
+            </textBox>
+
+            <h2>Extra Info</h2>
+            <textBox class="textBox">
+                <p>
+                    Devs: 1<br>
+                    Development time: 2 days<br>
+                    Engine: LÖVE2D<br><br>
+
+                    The project is finished and is available on my GitHub. You can find it
+                    <a class="WhiteLink" href="https://github.com/Jonah-Robojoon/LuaWaterSim">here</a>.
+                </p>
+            </textBox>
+
+        </projectInput>
+    </mainInput>
+
+</body>
+</html>
+```

@@ -3,6 +3,40 @@
     src: url('Fonts/c.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Tenada';
+    src: url('Fonts/Tenada.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('Fonts/MMexina.ttf') format('truetype');
+}
+
+.WhiteLink {
+    color: white;
+}
+#main-background {
+    position: relative;
+    overflow: hidden;
+}
+
+#main-background > projectInput {
+    position: relative;
+    z-index: 1;
+}
+
+.contactMe {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 10px;
+    font-size: 150%;
+    color: white;
+    font-family: 'Pixel', sans-serif;
+    white-space: pre-line;
+    background-color: #293257;
+    border-radius: 10px 10px 10px 10px;
+}
 
 body {
     margin: 0;
@@ -80,12 +114,12 @@ projectInput {
     margin: auto;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .multi-box {
-    width: 30%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -96,10 +130,53 @@ projectInput {
     background-image: linear-gradient(90deg, #11162E, #11162E);
     border-radius: 60px;
     color: white;
+    background-size: 100%;
+    text-decoration: none;
+    background-position: center;
+}
+
+GameHeaderInput {
+    filter: revert;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.GameHeader {
+    font-size: 300%;
+    color: white;
+    font-family: 'Tenada';
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
+}
+
+GameInfoInput {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+.GameInfoText {
+    font-family: 'Pixel';
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 60%;
+    text-decoration: none;
+
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
 }
 
 .multi-image {
-    width: 90%;
+    width: 30%;
     align-content: center;
     margin-right: 0;
     margin-left: 0px;
@@ -248,6 +325,8 @@ h1 {
 .name {
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 20px;
+    padding-top: 20px;
+    font-family: 'Tenada';
 }
 
 .extraContainer {

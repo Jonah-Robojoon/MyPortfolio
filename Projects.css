@@ -2,6 +2,10 @@
     font-family: 'Comucan';
     src: url('Fonts/Comucan.otf') format('truetype');
 }
+@font-face {
+    font-family: 'Tenada';
+    src: url('Fonts/Tenada.ttf') format('truetype');
+}
 
 
 projectInput {
@@ -65,10 +69,11 @@ h1 {
 h2 {
     font-size: 300%;
     color: white;
-    font-family: 'Comucan', sans-serif;
+    font-family: 'Tenada', sans-serif;
     margin-top: 20px;
+    padding-top: 5px;
     margin-bottom: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     padding-right: 20px;
     padding-left: 20px;
     background-color: #212a4d;
@@ -81,7 +86,7 @@ p {
     padding: 10px;
     font-size: 150%;
     color: white;
-    font-family: 'Comucan', sans-serif;
+    font-family: 'Pixel', sans-serif;
     white-space: pre-line;
     background-color: #293257;
     border-radius: 10px 10px 10px 10px;
