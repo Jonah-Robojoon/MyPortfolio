@@ -16,15 +16,6 @@
 .WhiteLink {
     color: white;
 }
-#main-background {
-    position: relative;
-    overflow: hidden;
-}
-
-#main-background > projectInput {
-    position: relative;
-    z-index: 1;
-}
 
 .contactMe {
     margin-top: 10px;
@@ -65,13 +56,13 @@ body {
     border-radius: 60px;
 }
 
-mainInput {
+/* mainInput {
     margin: 0;
     padding: 0;
     background-color: #000a2c;
     display: flex;
     justify-content: center;
-}
+} */
 
 projectInput {
     width: 80%;
