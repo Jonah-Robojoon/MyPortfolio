@@ -80,6 +80,12 @@ projectInput {
     border-radius: 0px 0px 60px 60px;
 }
 
+@media (max-width: 980px) {
+    projectInput {
+        width: 98%;
+    }
+}
+
 .text-content {
     display: flex;
     flex-direction: column;
