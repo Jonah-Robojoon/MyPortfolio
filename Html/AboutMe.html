@@ -18,7 +18,7 @@
         <projectInput>
             <h2>About Me</h2>
             <textBox class="sideImage textBox">
-                <img class="Image pfp" src="../Images/Pfp.jpg" alt="Profile Picture">
+                <!-- <img class="Image pfp" src="../Images/Pfp.jpg" alt="Profile Picture"> -->
                 <p>
                     I am Jonah Luijnenburg, currently studying game development at Mediacollege in Amsterdam.
                     In my free time, I enjoy playing the piano and video games. I also develop games independently.
@@ -38,9 +38,11 @@
                 </p>
             </textBox>
 
-            <textBox class="sideImage textBox">
+            <a href="../Images/JonahLuijnenburasdgCV.pdf"" id="cvDownload">
                 <img class="Image CV" src="../Images/CV.png" alt="Profile Picture">
-            </textBox>
+            </a>
+            <a href="../Images/JonahLuijnenburasdgCV.pdf"" id="cvDownload" class="downloadButton">Download CV</a>
+
 
             <h2>Contact Me!</h2>
             <textBox class="textBox">
@@ -54,6 +56,25 @@
         </projectInput>
     </mainInput>
 
-    <script src="../Background.js"></script>
+    <script
+        src="../Background.js">
+        
+        document.getElementById("cvDownload").addEventListener("click", async function (e) {
+            e.preventDefault();
+        
+            const response = await fetch("../Images/CV.pdf");
+            const blob = await response.blob();
+        
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement("a");
+        
+            link.href = url;
+            link.download = "CV.pdf";
+            link.click();
+        
+            URL.revokeObjectURL(url);
+        });
+        
+        </script>
 </body>
 </html>

@@ -126,3 +126,15 @@ p {
     border-radius: 20px;
     border: 6px solid #040614;
 }
+
+.downloadButton {
+        margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 10px;
+    font-size: 150%;
+    color: white;
+    font-family: 'Pixel', sans-serif;
+    white-space: pre-line;
+    background-color: #293257;
+    border-radius: 10px 10px 10px 10px;
+}
